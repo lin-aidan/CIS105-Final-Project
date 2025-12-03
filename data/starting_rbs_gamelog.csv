@@ -1,0 +1,396 @@
+player_id,player_name,team,date,opponent,result,rushing_attempts,rushing_yards,rushing_avg,rushing_td,rushing_lng,receiving_receptions,receiving_targets,receiving_yards
+4360516,Tyrone Tracy Jr.,nyg,Sun 9/7,@WSH,L21-6,10.0,24.0,2.4,0.0,6.0,2,5.0,11.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 9/14,@DAL,L40-37 OT,5.0,15.0,3.0,0.0,9.0,4,5.0,36.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 9/21,vsKC,L22-9,7.0,29.0,4.1,0.0,10.0,2,3.0,7.0
+4360516,Tyrone Tracy Jr.,nyg,Thu 10/9,vsPHI,W34-17,4.0,6.0,1.5,0.0,3.0,0,0.0,0.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 10/19,@DEN,L33-32,9.0,46.0,5.1,1.0,31.0,0,0.0,0.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 10/26,@PHI,L38-20,10.0,39.0,3.9,0.0,6.0,2,3.0,14.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 11/2,vsSF,L34-24,5.0,18.0,3.6,0.0,11.0,3,4.0,19.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 11/9,@CHI,L24-20,14.0,71.0,5.1,0.0,16.0,1,2.0,0.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 11/16,vsGB,L27-20,19.0,88.0,4.6,0.0,17.0,4,4.0,51.0
+4360516,Tyrone Tracy Jr.,nyg,Sun 11/23,@DET,L34-27 OT,20.0,62.0,3.1,0.0,11.0,3,4.0,68.0
+4360516,Tyrone Tracy Jr.,nyg,Mon 12/1,@NE,L33-15,10.0,36.0,3.6,0.0,9.0,1,1.0,-3.0
+4360516,Tyrone Tracy Jr.,nyg,Regular Season Stats,113,434,,,,,,203,,
+4362238,Chase Brown,cin,Sun 9/7,@CLE,W17-16,21.0,43.0,2.0,1.0,8.0,2,3.0,8.0
+4362238,Chase Brown,cin,Sun 9/14,vsJAX,W31-27,16.0,47.0,2.9,0.0,11.0,2,3.0,18.0
+4362238,Chase Brown,cin,Sun 9/21,@MIN,L48-10,10.0,3.0,0.3,0.0,4.0,4,5.0,17.0
+4362238,Chase Brown,cin,Mon 9/29,@DEN,L28-3,10.0,40.0,4.0,0.0,6.0,3,3.0,31.0
+4362238,Chase Brown,cin,Sun 10/5,vsDET,L37-24,8.0,27.0,3.4,0.0,6.0,7,8.0,21.0
+4362238,Chase Brown,cin,Sun 10/12,@GB,L27-18,9.0,42.0,4.7,0.0,13.0,2,2.0,7.0
+4362238,Chase Brown,cin,Thu 10/16,vsPIT,W33-31,11.0,108.0,9.8,0.0,37.0,2,4.0,-8.0
+4362238,Chase Brown,cin,Sun 10/26,vsNYJ,L39-38,12.0,73.0,6.1,1.0,22.0,3,3.0,32.0
+4362238,Chase Brown,cin,Sun 11/2,vsCHI,L47-42,11.0,37.0,3.4,0.0,12.0,8,14.0,75.0
+4362238,Chase Brown,cin,Sun 11/16,@PIT,L34-12,18.0,99.0,5.5,0.0,35.0,6,8.0,28.0
+4362238,Chase Brown,cin,Sun 11/23,vsNE,L26-20,19.0,107.0,5.6,0.0,21.0,2,4.0,23.0
+4362238,Chase Brown,cin,Thu 11/27,@BAL,W32-14,15.0,78.0,5.2,0.0,18.0,7,7.0,35.0
+4362238,Chase Brown,cin,Regular Season Stats,160,704,,,,,,287,,
+4379399,James Cook III,buf,Sun 9/7,vsBAL,W41-40,13.0,44.0,3.4,1.0,11.0,5,5.0,58.0
+4379399,James Cook III,buf,Sun 9/14,@NYJ,W30-10,21.0,132.0,6.3,2.0,44.0,1,1.0,3.0
+4379399,James Cook III,buf,Thu 9/18,vsMIA,W31-21,19.0,108.0,5.7,1.0,26.0,3,3.0,10.0
+4379399,James Cook III,buf,Sun 9/28,vsNO,W31-19,22.0,117.0,5.3,1.0,15.0,3,4.0,18.0
+4379399,James Cook III,buf,Sun 10/5,vsNE,L23-20,15.0,49.0,3.3,0.0,9.0,0,1.0,0.0
+4379399,James Cook III,buf,Mon 10/13,@ATL,L24-14,17.0,87.0,5.1,0.0,14.0,0,0.0,0.0
+4379399,James Cook III,buf,Sun 10/26,@CAR,W40-9,19.0,216.0,11.4,2.0,64.0,0,0.0,0.0
+4379399,James Cook III,buf,Sun 11/2,vsKC,W28-21,27.0,114.0,4.2,0.0,17.0,1,1.0,11.0
+4379399,James Cook III,buf,Sun 11/9,@MIA,L30-13,13.0,53.0,4.1,0.0,14.0,5,5.0,24.0
+4379399,James Cook III,buf,Sun 11/16,vsTB,W44-32,16.0,48.0,3.0,0.0,8.0,3,3.0,66.0
+4379399,James Cook III,buf,Thu 11/20,@HOU,L23-19,17.0,116.0,6.8,1.0,45.0,3,3.0,13.0
+4379399,James Cook III,buf,Sun 11/30,@PIT,W26-7,32.0,144.0,4.5,0.0,31.0,3,3.0,33.0
+4379399,James Cook III,buf,Regular Season Stats,231,"1,228",,,,,,236,,
+4429160,De'Von Achane,mia,Sun 9/7,@IND,L33-8,7.0,55.0,7.9,0.0,26.0,3,4.0,20.0
+4429160,De'Von Achane,mia,Sun 9/14,vsNE,L33-27,11.0,30.0,2.7,0.0,9.0,8,10.0,92.0
+4429160,De'Von Achane,mia,Thu 9/18,@BUF,L31-21,12.0,62.0,5.2,0.0,14.0,7,9.0,29.0
+4429160,De'Von Achane,mia,Mon 9/29,vsNYJ,W27-21,20.0,99.0,5.0,1.0,21.0,1,2.0,2.0
+4429160,De'Von Achane,mia,Sun 10/5,@CAR,L27-24,10.0,16.0,1.6,0.0,6.0,6,7.0,30.0
+4429160,De'Von Achane,mia,Sun 10/12,vsLAC,L29-27,16.0,128.0,8.0,2.0,49.0,4,6.0,22.0
+4429160,De'Von Achane,mia,Sun 10/19,@CLE,L31-6,13.0,82.0,6.3,0.0,46.0,3,5.0,16.0
+4429160,De'Von Achane,mia,Sun 10/26,@ATL,W34-10,18.0,67.0,3.7,0.0,12.0,5,7.0,24.0
+4429160,De'Von Achane,mia,Thu 10/30,vsBAL,L28-6,14.0,67.0,4.8,0.0,22.0,6,10.0,39.0
+4429160,De'Von Achane,mia,Sun 11/9,vsBUF,W30-13,22.0,174.0,7.9,2.0,59.0,6,6.0,51.0
+4429160,De'Von Achane,mia,Sun 11/16,vsWSH,W16-13 OT,21.0,120.0,5.7,0.0,23.0,5,5.0,45.0
+4429160,De'Von Achane,mia,Sun 11/30,vsNO,W21-17,22.0,134.0,6.1,1.0,29.0,0,1.0,0.0
+4429160,De'Von Achane,mia,Regular Season Stats,186,"1,034",,,,,,370,,
+4259545,D'Andre Swift,chi,Mon 9/8,vsMIN,L27-24,17.0,53.0,3.1,0.0,13.0,3,5.0,12.0
+4259545,D'Andre Swift,chi,Sun 9/14,@DET,L52-21,12.0,63.0,5.3,1.0,20.0,3,3.0,6.0
+4259545,D'Andre Swift,chi,Sun 9/21,vsDAL,W31-14,13.0,33.0,2.5,0.0,11.0,3,4.0,45.0
+4259545,D'Andre Swift,chi,Sun 9/28,@LV,W25-24,14.0,38.0,2.7,1.0,13.0,4,6.0,22.0
+4259545,D'Andre Swift,chi,Mon 10/13,@WSH,W25-24,14.0,108.0,7.7,0.0,19.0,2,3.0,67.0
+4259545,D'Andre Swift,chi,Sun 10/19,vsNO,W26-14,19.0,124.0,6.5,1.0,23.0,1,1.0,14.0
+4259545,D'Andre Swift,chi,Sun 10/26,@BAL,L30-16,11.0,45.0,4.1,1.0,13.0,2,2.0,26.0
+4259545,D'Andre Swift,chi,Sun 11/9,vsNYG,W24-20,13.0,80.0,6.2,0.0,25.0,5,8.0,18.0
+4259545,D'Andre Swift,chi,Sun 11/16,@MIN,W19-17,21.0,90.0,4.3,0.0,11.0,0,1.0,0.0
+4259545,D'Andre Swift,chi,Sun 11/23,vsPIT,W31-28,8.0,15.0,1.9,0.0,4.0,1,1.0,14.0
+4259545,D'Andre Swift,chi,Fri 11/28,@PHI,W24-15,18.0,125.0,6.9,1.0,23.0,1,2.0,13.0
+4259545,D'Andre Swift,chi,Regular Season Stats,160,774,,,,,,237,,
+4362619,Chris Rodriguez Jr.,wsh,Sun 9/21,vsLV,W41-24,11.0,39.0,3.5,0.0,14.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 9/28,@ATL,L34-27,7.0,59.0,8.4,0.0,48.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 10/5,@LAC,W27-10,5.0,7.0,1.4,0.0,3.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Mon 10/13,vsCHI,L25-24,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 10/19,@DAL,L44-22,3.0,12.0,4.0,1.0,7.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Mon 10/27,@KC,L28-7,1.0,2.0,2.0,0.0,2.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 11/2,vsSEA,L38-14,12.0,65.0,5.4,1.0,12.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 11/9,vsDET,L44-22,6.0,16.0,2.7,1.0,9.0,0,0.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 11/16,vsMIA,L16-13 OT,15.0,79.0,5.3,0.0,17.0,1,1.0,6.0
+4362619,Chris Rodriguez Jr.,wsh,Sun 11/30,vsDEN,L27-26 OT,11.0,41.0,3.7,1.0,11.0,0,1.0,0.0
+4362619,Chris Rodriguez Jr.,wsh,Regular Season Stats,71,320,,,,,,6,,
+4430807,Bijan Robinson,atl,Sun 9/7,vsTB,L23-20,12.0,24.0,2.0,0.0,6.0,6,7.0,100.0
+4430807,Bijan Robinson,atl,Sun 9/14,@MIN,W22-6,22.0,143.0,6.5,0.0,25.0,3,5.0,25.0
+4430807,Bijan Robinson,atl,Sun 9/21,@CAR,L30-0,13.0,72.0,5.5,0.0,17.0,5,6.0,39.0
+4430807,Bijan Robinson,atl,Sun 9/28,vsWSH,W34-27,17.0,75.0,4.4,1.0,14.0,4,5.0,106.0
+4430807,Bijan Robinson,atl,Mon 10/13,vsBUF,W24-14,19.0,170.0,8.9,1.0,81.0,6,8.0,68.0
+4430807,Bijan Robinson,atl,Sun 10/19,@SF,L20-10,14.0,40.0,2.9,0.0,8.0,6,8.0,52.0
+4430807,Bijan Robinson,atl,Sun 10/26,vsMIA,L34-10,9.0,25.0,2.8,0.0,7.0,3,3.0,23.0
+4430807,Bijan Robinson,atl,Sun 11/2,@NE,L24-23,12.0,46.0,3.8,0.0,15.0,8,10.0,50.0
+4430807,Bijan Robinson,atl,Sun 11/9,vsIND,L31-25 OT,17.0,84.0,4.9,0.0,16.0,2,2.0,4.0
+4430807,Bijan Robinson,atl,Sun 11/16,vsCAR,L30-27 OT,23.0,104.0,4.5,2.0,19.0,4,5.0,39.0
+4430807,Bijan Robinson,atl,Sun 11/23,@NO,W24-10,14.0,70.0,5.0,0.0,32.0,2,2.0,37.0
+4430807,Bijan Robinson,atl,Sun 11/30,@NYJ,L27-24,23.0,142.0,6.2,1.0,26.0,5,7.0,51.0
+4430807,Bijan Robinson,atl,Regular Season Stats,195,995,,,,,,594,,
+3916148,Tony Pollard,ten,Sun 9/7,@DEN,L20-12,18.0,60.0,3.3,0.0,9.0,1,1.0,29.0
+3916148,Tony Pollard,ten,Sun 9/14,vsLAR,L33-19,20.0,92.0,4.6,0.0,10.0,0,1.0,0.0
+3916148,Tony Pollard,ten,Sun 9/21,vsIND,L41-20,16.0,45.0,2.8,1.0,10.0,2,4.0,14.0
+3916148,Tony Pollard,ten,Sun 9/28,@HOU,L26-0,14.0,64.0,4.6,0.0,21.0,3,3.0,12.0
+3916148,Tony Pollard,ten,Sun 10/5,@ARI,W22-21,14.0,67.0,4.8,1.0,14.0,3,3.0,11.0
+3916148,Tony Pollard,ten,Sun 10/12,@LV,L20-10,10.0,34.0,3.4,0.0,17.0,2,2.0,13.0
+3916148,Tony Pollard,ten,Sun 10/19,vsNE,L31-13,6.0,18.0,3.0,0.0,6.0,6,6.0,43.0
+3916148,Tony Pollard,ten,Sun 10/26,@IND,L38-14,11.0,44.0,4.0,0.0,11.0,1,2.0,9.0
+3916148,Tony Pollard,ten,Sun 11/2,vsLAC,L27-20,10.0,56.0,5.6,0.0,16.0,1,2.0,12.0
+3916148,Tony Pollard,ten,Sun 11/16,vsHOU,L16-13,10.0,22.0,2.2,0.0,7.0,3,3.0,4.0
+3916148,Tony Pollard,ten,Sun 11/23,vsSEA,L30-24,11.0,20.0,1.8,0.0,5.0,4,5.0,21.0
+3916148,Tony Pollard,ten,Sun 11/30,vsJAX,L25-3,10.0,60.0,6.0,0.0,15.0,1,2.0,3.0
+3916148,Tony Pollard,ten,Regular Season Stats,150,582,,,,,,171,,
+3042519,Aaron Jones Sr.,min,Mon 9/8,@CHI,W27-24,8.0,23.0,2.9,0.0,9.0,3,3.0,44.0
+3042519,Aaron Jones Sr.,min,Sun 9/14,vsATL,L22-6,5.0,23.0,4.6,0.0,8.0,0,1.0,0.0
+3042519,Aaron Jones Sr.,min,Thu 10/23,@LAC,L37-10,5.0,15.0,3.0,0.0,5.0,2,4.0,15.0
+3042519,Aaron Jones Sr.,min,Sun 11/2,@DET,W27-24,9.0,78.0,8.7,0.0,31.0,2,2.0,20.0
+3042519,Aaron Jones Sr.,min,Sun 11/9,vsBAL,L27-19,9.0,47.0,5.2,1.0,17.0,3,6.0,22.0
+3042519,Aaron Jones Sr.,min,Sun 11/16,vsCHI,L19-17,16.0,70.0,4.4,0.0,14.0,3,6.0,11.0
+3042519,Aaron Jones Sr.,min,Sun 11/23,@GB,L23-6,9.0,41.0,4.6,0.0,13.0,3,4.0,16.0
+3042519,Aaron Jones Sr.,min,Sun 11/30,@SEA,L26-0,6.0,3.0,0.5,0.0,4.0,4,4.0,22.0
+3042519,Aaron Jones Sr.,min,Regular Season Stats,67,300,,,,,,150,,
+4427366,Breece Hall,nyj,Sun 9/7,vsPIT,L34-32,19.0,107.0,5.6,0.0,18.0,2,4.0,38.0
+4427366,Breece Hall,nyj,Sun 9/14,vsBUF,L30-10,10.0,29.0,2.9,0.0,12.0,2,3.0,9.0
+4427366,Breece Hall,nyj,Sun 9/21,@TB,L29-27,9.0,21.0,2.3,0.0,17.0,4,6.0,31.0
+4427366,Breece Hall,nyj,Mon 9/29,@MIA,L27-21,14.0,81.0,5.8,0.0,23.0,5,6.0,30.0
+4427366,Breece Hall,nyj,Sun 10/5,vsDAL,L37-22,14.0,113.0,8.1,0.0,22.0,4,5.0,42.0
+4427366,Breece Hall,nyj,Sun 10/12,vsDEN,L13-11,22.0,59.0,2.7,0.0,8.0,0,0.0,0.0
+4427366,Breece Hall,nyj,Sun 10/19,vsCAR,L13-6,11.0,38.0,3.5,0.0,8.0,2,3.0,14.0
+4427366,Breece Hall,nyj,Sun 10/26,@CIN,W39-38,18.0,133.0,7.4,2.0,35.0,2,3.0,14.0
+4427366,Breece Hall,nyj,Sun 11/9,vsCLE,W27-20,21.0,83.0,4.0,0.0,30.0,1,1.0,42.0
+4427366,Breece Hall,nyj,Thu 11/13,@NE,L27-14,14.0,58.0,4.1,0.0,11.0,2,2.0,6.0
+4427366,Breece Hall,nyj,Sun 11/23,@BAL,L23-10,16.0,44.0,2.8,0.0,9.0,4,4.0,75.0
+4427366,Breece Hall,nyj,Sun 11/30,vsATL,W27-24,19.0,68.0,3.6,1.0,9.0,2,2.0,8.0
+4427366,Breece Hall,nyj,Regular Season Stats,187,834,,,,,,309,,
+4038815,Rico Dowdle,car,Sun 9/7,@JAX,L26-10,3.0,12.0,4.0,0.0,9.0,2,3.0,4.0
+4038815,Rico Dowdle,car,Sun 9/14,@ARI,L27-22,6.0,9.0,1.5,0.0,5.0,1,1.0,10.0
+4038815,Rico Dowdle,car,Sun 9/21,vsATL,W30-0,10.0,30.0,3.0,1.0,8.0,1,1.0,8.0
+4038815,Rico Dowdle,car,Sun 9/28,@NE,L42-13,9.0,32.0,3.6,0.0,10.0,1,1.0,-2.0
+4038815,Rico Dowdle,car,Sun 10/5,vsMIA,W27-24,23.0,206.0,9.0,1.0,53.0,3,4.0,28.0
+4038815,Rico Dowdle,car,Sun 10/12,vsDAL,W30-27,30.0,183.0,6.1,0.0,15.0,4,5.0,56.0
+4038815,Rico Dowdle,car,Sun 10/19,@NYJ,W13-6,17.0,79.0,4.6,0.0,13.0,1,2.0,17.0
+4038815,Rico Dowdle,car,Sun 10/26,vsBUF,L40-9,8.0,54.0,6.8,0.0,24.0,0,0.0,0.0
+4038815,Rico Dowdle,car,Sun 11/2,@GB,W16-13,25.0,130.0,5.2,2.0,29.0,2,3.0,11.0
+4038815,Rico Dowdle,car,Sun 11/9,vsNO,L17-7,18.0,53.0,2.9,1.0,14.0,3,3.0,10.0
+4038815,Rico Dowdle,car,Sun 11/16,@ATL,W30-27 OT,19.0,45.0,2.4,0.0,6.0,5,7.0,55.0
+4038815,Rico Dowdle,car,Mon 11/24,@SF,L20-9,6.0,38.0,6.3,0.0,17.0,4,4.0,36.0
+4038815,Rico Dowdle,car,Sun 11/30,vsLAR,W31-28,18.0,58.0,3.2,0.0,17.0,2,2.0,21.0
+4038815,Rico Dowdle,car,Regular Season Stats,192,929,,,,,,254,,
+4361579,Javonte Williams,dal,Thu 9/4,@PHI,L24-20,15.0,54.0,3.6,2.0,11.0,2,3.0,10.0
+4361579,Javonte Williams,dal,Sun 9/14,vsNYG,W40-37 OT,18.0,97.0,5.4,1.0,30.0,6,7.0,33.0
+4361579,Javonte Williams,dal,Sun 9/21,@CHI,L31-14,10.0,76.0,7.6,0.0,22.0,5,5.0,16.0
+4361579,Javonte Williams,dal,Sun 9/28,vsGB,T40-40 OT,20.0,85.0,4.3,1.0,13.0,3,3.0,15.0
+4361579,Javonte Williams,dal,Sun 10/5,@NYJ,W37-22,16.0,135.0,8.4,1.0,66.0,1,2.0,4.0
+4361579,Javonte Williams,dal,Sun 10/12,@CAR,L30-27,13.0,29.0,2.2,0.0,6.0,5,8.0,5.0
+4361579,Javonte Williams,dal,Sun 10/19,vsWSH,W44-22,19.0,116.0,6.1,1.0,33.0,1,4.0,2.0
+4361579,Javonte Williams,dal,Sun 10/26,@DEN,L44-24,13.0,41.0,3.2,2.0,9.0,1,2.0,8.0
+4361579,Javonte Williams,dal,Mon 11/3,vsARI,L27-17,15.0,83.0,5.5,0.0,19.0,1,1.0,0.0
+4361579,Javonte Williams,dal,Mon 11/17,@LV,W33-16,22.0,93.0,4.2,0.0,16.0,1,1.0,0.0
+4361579,Javonte Williams,dal,Sun 11/23,vsPHI,W24-21,20.0,87.0,4.4,0.0,20.0,2,3.0,14.0
+4361579,Javonte Williams,dal,Thu 11/27,vsKC,W31-28,17.0,59.0,3.5,0.0,11.0,3,3.0,21.0
+4361579,Javonte Williams,dal,Regular Season Stats,198,955,,,,,,128,,
+3054850,Alvin Kamara,no,Sun 9/7,vsARI,L20-13,11.0,45.0,4.1,1.0,18.0,2,2.0,12.0
+3054850,Alvin Kamara,no,Sun 9/14,vsSF,L26-21,21.0,99.0,4.7,0.0,15.0,6,6.0,21.0
+3054850,Alvin Kamara,no,Sun 9/21,@SEA,L44-13,18.0,42.0,2.3,0.0,8.0,1,2.0,14.0
+3054850,Alvin Kamara,no,Sun 9/28,@BUF,L31-19,15.0,70.0,4.7,0.0,17.0,4,5.0,2.0
+3054850,Alvin Kamara,no,Sun 10/5,vsNYG,W26-14,8.0,27.0,3.4,0.0,11.0,4,6.0,28.0
+3054850,Alvin Kamara,no,Sun 10/12,vsNE,L25-19,10.0,31.0,3.1,0.0,7.0,5,5.0,45.0
+3054850,Alvin Kamara,no,Sun 10/19,@CHI,L26-14,11.0,28.0,2.5,0.0,6.0,3,3.0,1.0
+3054850,Alvin Kamara,no,Sun 10/26,vsTB,L23-3,6.0,21.0,3.5,0.0,5.0,2,2.0,24.0
+3054850,Alvin Kamara,no,Sun 11/2,@LAR,L34-10,6.0,14.0,2.3,0.0,3.0,1,3.0,3.0
+3054850,Alvin Kamara,no,Sun 11/9,@CAR,W17-7,22.0,83.0,3.8,0.0,16.0,3,3.0,32.0
+3054850,Alvin Kamara,no,Sun 11/23,vsATL,L24-10,3.0,11.0,3.7,0.0,5.0,2,2.0,4.0
+3054850,Alvin Kamara,no,Regular Season Stats,131,471,,,,,,186,,
+3043078,Derrick Henry,bal,Sun 9/7,@BUF,L41-40,18.0,169.0,9.4,2.0,49.0,1,1.0,13.0
+3043078,Derrick Henry,bal,Sun 9/14,vsCLE,W41-17,11.0,23.0,2.1,0.0,8.0,0,0.0,0.0
+3043078,Derrick Henry,bal,Mon 9/22,vsDET,L38-30,12.0,50.0,4.2,1.0,28.0,1,1.0,7.0
+3043078,Derrick Henry,bal,Sun 9/28,@KC,L37-20,8.0,42.0,5.3,0.0,14.0,2,3.0,16.0
+3043078,Derrick Henry,bal,Sun 10/5,vsHOU,L44-10,15.0,33.0,2.2,1.0,7.0,0,1.0,0.0
+3043078,Derrick Henry,bal,Sun 10/12,vsLAR,L17-3,24.0,122.0,5.1,0.0,12.0,1,2.0,8.0
+3043078,Derrick Henry,bal,Sun 10/26,vsCHI,W30-16,21.0,71.0,3.4,2.0,10.0,0,1.0,0.0
+3043078,Derrick Henry,bal,Thu 10/30,@MIA,W28-6,19.0,119.0,6.3,0.0,35.0,1,1.0,2.0
+3043078,Derrick Henry,bal,Sun 11/9,@MIN,W27-19,20.0,75.0,3.8,0.0,14.0,3,3.0,9.0
+3043078,Derrick Henry,bal,Sun 11/16,@CLE,W23-16,18.0,103.0,5.7,1.0,59.0,2,2.0,19.0
+3043078,Derrick Henry,bal,Sun 11/23,vsNYJ,W23-10,21.0,64.0,3.0,2.0,17.0,2,2.0,24.0
+3043078,Derrick Henry,bal,Thu 11/27,vsCIN,L32-14,10.0,60.0,6.0,1.0,28.0,1,1.0,44.0
+3043078,Derrick Henry,bal,Regular Season Stats,197,931,,,,,,142,,
+3929630,Saquon Barkley,phi,Thu 9/4,vsDAL,W24-20,18.0,60.0,3.3,1.0,16.0,4,5.0,24.0
+3929630,Saquon Barkley,phi,Sun 9/14,@KC,W20-17,22.0,88.0,4.0,1.0,13.0,2,2.0,6.0
+3929630,Saquon Barkley,phi,Sun 9/21,vsLAR,W33-26,18.0,46.0,2.6,0.0,12.0,4,5.0,9.0
+3929630,Saquon Barkley,phi,Sun 9/28,@TB,W31-25,19.0,43.0,2.3,1.0,10.0,4,4.0,31.0
+3929630,Saquon Barkley,phi,Sun 10/5,vsDEN,L21-17,6.0,30.0,5.0,0.0,17.0,3,3.0,58.0
+3929630,Saquon Barkley,phi,Thu 10/9,@NYG,L34-17,12.0,58.0,4.8,0.0,18.0,2,3.0,9.0
+3929630,Saquon Barkley,phi,Sun 10/19,@MIN,W28-22,18.0,44.0,2.4,0.0,9.0,1,1.0,-2.0
+3929630,Saquon Barkley,phi,Sun 10/26,vsNYG,W38-20,14.0,150.0,10.7,1.0,65.0,4,5.0,24.0
+3929630,Saquon Barkley,phi,Mon 11/10,@GB,W10-7,22.0,60.0,2.7,0.0,15.0,3,3.0,41.0
+3929630,Saquon Barkley,phi,Sun 11/16,vsDET,W16-9,26.0,83.0,3.2,0.0,14.0,1,2.0,7.0
+3929630,Saquon Barkley,phi,Sun 11/23,@DAL,L24-21,10.0,22.0,2.2,0.0,7.0,7,8.0,52.0
+3929630,Saquon Barkley,phi,Fri 11/28,vsCHI,L24-15,13.0,56.0,4.3,0.0,15.0,0,2.0,0.0
+3929630,Saquon Barkley,phi,Regular Season Stats,198,740,,,,,,259,,
+4427728,Bam Knight,ari,Sun 9/14,vsCAR,W27-22,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0
+4427728,Bam Knight,ari,Thu 9/25,vsSEA,L23-20,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0
+4427728,Bam Knight,ari,Sun 10/5,vsTEN,L22-21,4.0,11.0,2.8,1.0,10.0,1,1.0,13.0
+4427728,Bam Knight,ari,Sun 10/12,@IND,L31-27,11.0,34.0,3.1,1.0,7.0,1,2.0,20.0
+4427728,Bam Knight,ari,Sun 10/19,vsGB,L27-23,14.0,57.0,4.1,0.0,9.0,3,4.0,7.0
+4427728,Bam Knight,ari,Mon 11/3,@DAL,W27-17,9.0,27.0,3.0,0.0,17.0,2,2.0,20.0
+4427728,Bam Knight,ari,Sun 11/9,@SEA,L44-22,10.0,28.0,2.8,0.0,11.0,1,4.0,5.0
+4427728,Bam Knight,ari,Sun 11/16,vsSF,L41-22,5.0,24.0,4.8,1.0,7.0,4,4.0,21.0
+4427728,Bam Knight,ari,Sun 11/23,vsJAX,L27-24 OT,10.0,12.0,1.2,1.0,6.0,4,5.0,20.0
+4427728,Bam Knight,ari,Sun 11/30,@TB,L20-17,11.0,62.0,5.6,0.0,16.0,3,3.0,36.0
+4427728,Bam Knight,ari,Regular Season Stats,74,255,,,,,,142,,
+4430968,Kimani Vidal,lac,Sun 9/28,@NYG,L21-18,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0
+4430968,Kimani Vidal,lac,Sun 10/5,vsWSH,L27-10,4.0,18.0,4.5,0.0,11.0,1,1.0,1.0
+4430968,Kimani Vidal,lac,Sun 10/12,@MIA,W29-27,18.0,124.0,6.9,0.0,38.0,3,4.0,14.0
+4430968,Kimani Vidal,lac,Sun 10/19,vsIND,L38-24,9.0,20.0,2.2,0.0,5.0,4,5.0,15.0
+4430968,Kimani Vidal,lac,Thu 10/23,vsMIN,W37-10,23.0,117.0,5.1,1.0,21.0,1,2.0,10.0
+4430968,Kimani Vidal,lac,Sun 11/2,@TEN,W27-20,12.0,30.0,2.5,0.0,7.0,0,1.0,0.0
+4430968,Kimani Vidal,lac,Sun 11/9,vsPIT,W25-10,25.0,95.0,3.8,1.0,12.0,1,1.0,13.0
+4430968,Kimani Vidal,lac,Sun 11/16,@JAX,L35-6,5.0,13.0,2.6,0.0,4.0,2,2.0,-1.0
+4430968,Kimani Vidal,lac,Sun 11/30,vsLV,W31-14,25.0,126.0,5.0,1.0,59.0,1,1.0,11.0
+4430968,Kimani Vidal,lac,Regular Season Stats,121,543,,,,,,63,,
+3117251,Christian McCaffrey,sf,Sun 9/7,@SEA,W17-13,22.0,69.0,3.1,0.0,13.0,9,10.0,73.0
+3117251,Christian McCaffrey,sf,Sun 9/14,@NO,W26-21,13.0,55.0,4.2,0.0,10.0,6,7.0,52.0
+3117251,Christian McCaffrey,sf,Sun 9/21,vsARI,W16-15,17.0,52.0,3.1,0.0,15.0,10,15.0,88.0
+3117251,Christian McCaffrey,sf,Sun 9/28,vsJAX,L26-21,17.0,49.0,2.9,0.0,11.0,6,11.0,92.0
+3117251,Christian McCaffrey,sf,Thu 10/2,@LAR,W26-23 OT,22.0,57.0,2.6,0.0,8.0,8,9.0,82.0
+3117251,Christian McCaffrey,sf,Sun 10/12,@TB,L30-19,17.0,54.0,3.2,1.0,11.0,7,8.0,57.0
+3117251,Christian McCaffrey,sf,Sun 10/19,vsATL,W20-10,24.0,129.0,5.4,2.0,15.0,7,8.0,72.0
+3117251,Christian McCaffrey,sf,Sun 10/26,@HOU,L26-15,8.0,25.0,3.1,0.0,9.0,3,6.0,43.0
+3117251,Christian McCaffrey,sf,Sun 11/2,@NYG,W34-24,28.0,106.0,3.8,1.0,16.0,5,6.0,67.0
+3117251,Christian McCaffrey,sf,Sun 11/9,vsLAR,L42-26,12.0,30.0,2.5,0.0,5.0,8,10.0,66.0
+3117251,Christian McCaffrey,sf,Sun 11/16,@ARI,W41-22,13.0,81.0,6.2,2.0,20.0,5,6.0,40.0
+3117251,Christian McCaffrey,sf,Mon 11/24,vsCAR,W20-9,24.0,89.0,3.7,1.0,17.0,7,7.0,53.0
+3117251,Christian McCaffrey,sf,Sun 11/30,@CLE,W26-8,20.0,53.0,2.7,1.0,7.0,4,4.0,21.0
+3117251,Christian McCaffrey,sf,Regular Season Stats,237,849,,,,,,806,,
+4569987,Jaylen Warren,pit,Sun 9/7,@NYJ,W34-32,11.0,37.0,3.4,0.0,9.0,2,2.0,22.0
+4569987,Jaylen Warren,pit,Sun 9/14,vsSEA,L31-17,14.0,48.0,3.4,0.0,9.0,4,4.0,86.0
+4569987,Jaylen Warren,pit,Sun 9/21,@NE,W21-14,18.0,47.0,2.6,0.0,11.0,5,6.0,34.0
+4569987,Jaylen Warren,pit,Sun 10/12,vsCLE,W23-9,11.0,52.0,4.7,0.0,11.0,2,2.0,11.0
+4569987,Jaylen Warren,pit,Thu 10/16,@CIN,L33-31,16.0,127.0,7.9,0.0,37.0,4,5.0,31.0
+4569987,Jaylen Warren,pit,Sun 10/26,vsGB,L35-25,13.0,62.0,4.8,0.0,17.0,2,3.0,11.0
+4569987,Jaylen Warren,pit,Sun 11/2,vsIND,W27-20,16.0,31.0,1.9,2.0,8.0,2,2.0,-2.0
+4569987,Jaylen Warren,pit,Sun 11/9,@LAC,L25-10,14.0,70.0,5.0,0.0,14.0,2,2.0,21.0
+4569987,Jaylen Warren,pit,Sun 11/16,vsCIN,W34-12,10.0,62.0,6.2,0.0,35.0,2,2.0,5.0
+4569987,Jaylen Warren,pit,Sun 11/23,@CHI,L31-28,18.0,68.0,3.8,1.0,12.0,0,0.0,0.0
+4569987,Jaylen Warren,pit,Sun 11/30,vsBUF,L26-7,10.0,35.0,3.5,1.0,12.0,2,4.0,9.0
+4569987,Jaylen Warren,pit,Regular Season Stats,151,639,,,,,,228,,
+4890973,Ashton Jeanty,lv,Sun 9/7,@NE,W20-13,19.0,38.0,2.0,1.0,9.0,2,2.0,2.0
+4890973,Ashton Jeanty,lv,Mon 9/15,vsLAC,L20-9,11.0,43.0,3.9,0.0,13.0,3,4.0,1.0
+4890973,Ashton Jeanty,lv,Sun 9/21,@WSH,L41-24,17.0,63.0,3.7,0.0,18.0,0,0.0,0.0
+4890973,Ashton Jeanty,lv,Sun 9/28,vsCHI,L25-24,21.0,138.0,6.6,1.0,64.0,2,2.0,17.0
+4890973,Ashton Jeanty,lv,Sun 10/5,@IND,L40-6,14.0,67.0,4.8,0.0,12.0,5,7.0,42.0
+4890973,Ashton Jeanty,lv,Sun 10/12,vsTEN,W20-10,23.0,75.0,3.3,1.0,13.0,2,4.0,11.0
+4890973,Ashton Jeanty,lv,Sun 10/19,@KC,L31-0,6.0,21.0,3.5,0.0,8.0,1,1.0,13.0
+4890973,Ashton Jeanty,lv,Sun 11/2,vsJAX,L30-29 OT,13.0,42.0,3.2,0.0,13.0,5,5.0,47.0
+4890973,Ashton Jeanty,lv,Thu 11/6,@DEN,L10-7,19.0,60.0,3.2,1.0,10.0,3,5.0,3.0
+4890973,Ashton Jeanty,lv,Mon 11/17,vsDAL,L33-16,6.0,7.0,1.2,0.0,11.0,6,8.0,27.0
+4890973,Ashton Jeanty,lv,Sun 11/23,vsCLE,L24-10,17.0,50.0,2.9,0.0,12.0,8,8.0,58.0
+4890973,Ashton Jeanty,lv,Sun 11/30,@LAC,L31-14,15.0,31.0,2.1,0.0,9.0,6,8.0,30.0
+4890973,Ashton Jeanty,lv,Regular Season Stats,181,635,,,,,,251,,
+4430737,Kyren Williams,lar,Sun 9/7,vsHOU,W14-9,18.0,66.0,3.7,1.0,9.0,1,2.0,3.0
+4430737,Kyren Williams,lar,Sun 9/14,@TEN,W33-19,17.0,66.0,3.9,0.0,15.0,2,2.0,14.0
+4430737,Kyren Williams,lar,Sun 9/21,@PHI,L33-26,20.0,94.0,4.7,0.0,13.0,2,3.0,18.0
+4430737,Kyren Williams,lar,Sun 9/28,vsIND,W27-20,13.0,77.0,5.9,0.0,11.0,3,4.0,17.0
+4430737,Kyren Williams,lar,Thu 10/2,vsSF,L26-23 OT,14.0,65.0,4.6,0.0,20.0,8,10.0,66.0
+4430737,Kyren Williams,lar,Sun 10/12,@BAL,W17-3,13.0,50.0,3.8,1.0,13.0,2,2.0,37.0
+4430737,Kyren Williams,lar,Sun 10/19,vsJAX,W35-7,12.0,54.0,4.5,0.0,10.0,2,3.0,11.0
+4430737,Kyren Williams,lar,Sun 11/2,vsNO,W34-10,25.0,114.0,4.6,1.0,15.0,0,0.0,0.0
+4430737,Kyren Williams,lar,Sun 11/9,@SF,W42-26,14.0,73.0,5.2,2.0,12.0,2,3.0,11.0
+4430737,Kyren Williams,lar,Sun 11/16,vsSEA,W21-19,12.0,91.0,7.6,1.0,34.0,1,2.0,5.0
+4430737,Kyren Williams,lar,Sun 11/23,vsTB,W34-7,12.0,46.0,3.8,0.0,9.0,1,1.0,2.0
+4430737,Kyren Williams,lar,Sun 11/30,@CAR,L31-28,13.0,72.0,5.5,1.0,12.0,0,1.0,0.0
+4430737,Kyren Williams,lar,Regular Season Stats,183,868,,,,,,184,,
+4685702,Quinshon Judkins,cle,Sun 9/14,@BAL,L41-17,10.0,61.0,6.1,0.0,31.0,3,3.0,10.0
+4685702,Quinshon Judkins,cle,Sun 9/21,vsGB,W13-10,18.0,94.0,5.2,1.0,38.0,1,2.0,1.0
+4685702,Quinshon Judkins,cle,Sun 9/28,@DET,L34-10,21.0,82.0,3.9,1.0,11.0,4,4.0,33.0
+4685702,Quinshon Judkins,cle,Sun 10/5,vsMIN,L21-17,23.0,110.0,4.8,0.0,32.0,1,2.0,18.0
+4685702,Quinshon Judkins,cle,Sun 10/12,@PIT,L23-9,12.0,36.0,3.0,0.0,6.0,0,1.0,0.0
+4685702,Quinshon Judkins,cle,Sun 10/19,vsMIA,W31-6,25.0,84.0,3.4,3.0,46.0,0,0.0,0.0
+4685702,Quinshon Judkins,cle,Sun 10/26,@NE,L32-13,9.0,19.0,2.1,0.0,6.0,3,3.0,-2.0
+4685702,Quinshon Judkins,cle,Sun 11/9,@NYJ,L27-20,22.0,75.0,3.4,0.0,11.0,2,3.0,10.0
+4685702,Quinshon Judkins,cle,Sun 11/16,vsBAL,L23-16,17.0,59.0,3.5,0.0,16.0,0,2.0,0.0
+4685702,Quinshon Judkins,cle,Sun 11/23,@LV,W24-10,16.0,47.0,2.9,2.0,11.0,0,0.0,0.0
+4685702,Quinshon Judkins,cle,Sun 11/30,vsSF,L26-8,23.0,91.0,4.0,0.0,17.0,3,3.0,18.0
+4685702,Quinshon Judkins,cle,Regular Season Stats,196,758,,,,,,88,,
+4429795,Jahmyr Gibbs,det,Sun 9/7,@GB,L27-13,9.0,19.0,2.1,0.0,14.0,10,10.0,31.0
+4429795,Jahmyr Gibbs,det,Sun 9/14,vsCHI,W52-21,12.0,94.0,7.8,1.0,42.0,3,3.0,10.0
+4429795,Jahmyr Gibbs,det,Mon 9/22,@BAL,W38-30,22.0,67.0,3.0,2.0,9.0,5,6.0,32.0
+4429795,Jahmyr Gibbs,det,Sun 9/28,vsCLE,W34-10,15.0,91.0,6.1,1.0,24.0,2,2.0,6.0
+4429795,Jahmyr Gibbs,det,Sun 10/5,@CIN,W37-24,12.0,54.0,4.5,0.0,9.0,2,2.0,33.0
+4429795,Jahmyr Gibbs,det,Sun 10/12,@KC,L30-17,17.0,65.0,3.8,0.0,15.0,1,2.0,0.0
+4429795,Jahmyr Gibbs,det,Mon 10/20,vsTB,W24-9,17.0,136.0,8.0,2.0,78.0,3,3.0,82.0
+4429795,Jahmyr Gibbs,det,Sun 11/2,vsMIN,L27-24,9.0,25.0,2.8,0.0,7.0,3,3.0,3.0
+4429795,Jahmyr Gibbs,det,Sun 11/9,@WSH,W44-22,15.0,142.0,9.5,2.0,43.0,3,4.0,30.0
+4429795,Jahmyr Gibbs,det,Sun 11/16,@PHI,L16-9,12.0,39.0,3.3,0.0,11.0,5,8.0,107.0
+4429795,Jahmyr Gibbs,det,Sun 11/23,vsNYG,W34-27 OT,15.0,219.0,14.6,2.0,69.0,11,12.0,45.0
+4429795,Jahmyr Gibbs,det,Thu 11/27,vsGB,L31-24,20.0,68.0,3.4,0.0,18.0,3,4.0,18.0
+4429795,Jahmyr Gibbs,det,Regular Season Stats,175,"1,019",,,,,,397,,
+3059915,Kareem Hunt,kc,Fri 9/5,vsLAC,L27-21,5.0,16.0,3.2,0.0,6.0,2,3.0,10.0
+3059915,Kareem Hunt,kc,Sun 9/14,vsPHI,L20-17,8.0,31.0,3.9,0.0,11.0,1,1.0,3.0
+3059915,Kareem Hunt,kc,Sun 9/21,@NYG,W22-9,10.0,34.0,3.4,1.0,6.0,1,1.0,10.0
+3059915,Kareem Hunt,kc,Sun 9/28,vsBAL,W37-20,13.0,34.0,2.6,0.0,7.0,1,1.0,13.0
+3059915,Kareem Hunt,kc,Mon 10/6,@JAX,L31-28,7.0,49.0,7.0,2.0,33.0,1,1.0,8.0
+3059915,Kareem Hunt,kc,Sun 10/12,vsDET,W30-17,6.0,23.0,3.8,0.0,10.0,1,1.0,11.0
+3059915,Kareem Hunt,kc,Sun 10/19,vsLV,W31-0,4.0,18.0,4.5,0.0,9.0,0,0.0,0.0
+3059915,Kareem Hunt,kc,Mon 10/27,vsWSH,W28-7,9.0,40.0,4.4,1.0,11.0,1,1.0,2.0
+3059915,Kareem Hunt,kc,Sun 11/2,@BUF,L28-21,11.0,49.0,4.5,1.0,13.0,1,2.0,6.0
+3059915,Kareem Hunt,kc,Sun 11/16,@DEN,L22-19,13.0,59.0,4.5,1.0,11.0,1,2.0,3.0
+3059915,Kareem Hunt,kc,Sun 11/23,vsIND,W23-20 OT,30.0,104.0,3.5,1.0,18.0,3,3.0,26.0
+3059915,Kareem Hunt,kc,Thu 11/27,@DAL,L31-28,14.0,58.0,4.1,0.0,14.0,1,2.0,22.0
+3059915,Kareem Hunt,kc,Regular Season Stats,130,515,,,,,,114,,
+4596448,Bucky Irving,tb,Sun 9/7,@ATL,W23-20,14.0,37.0,2.6,0.0,9.0,4,4.0,8.0
+4596448,Bucky Irving,tb,Mon 9/15,@HOU,W20-19,17.0,71.0,4.2,0.0,10.0,6,6.0,50.0
+4596448,Bucky Irving,tb,Sun 9/21,vsNYJ,W29-27,25.0,66.0,2.6,0.0,16.0,4,4.0,33.0
+4596448,Bucky Irving,tb,Sun 9/28,vsPHI,L31-25,15.0,63.0,4.2,0.0,15.0,5,5.0,102.0
+4596448,Bucky Irving,tb,Sun 11/30,vsARI,W20-17,17.0,61.0,3.6,1.0,13.0,2,2.0,20.0
+4596448,Bucky Irving,tb,Regular Season Stats,88,298,,,,,,213,,
+4242335,Jonathan Taylor,ind,Sun 9/7,vsMIA,W33-8,18.0,71.0,3.9,0.0,15.0,3,3.0,27.0
+4242335,Jonathan Taylor,ind,Sun 9/14,vsDEN,W29-28,25.0,165.0,6.6,0.0,68.0,2,2.0,50.0
+4242335,Jonathan Taylor,ind,Sun 9/21,@TEN,W41-20,17.0,102.0,6.0,3.0,46.0,3,4.0,16.0
+4242335,Jonathan Taylor,ind,Sun 9/28,@LAR,L27-20,17.0,76.0,4.5,0.0,12.0,5,5.0,20.0
+4242335,Jonathan Taylor,ind,Sun 10/5,vsLV,W40-6,17.0,66.0,3.9,3.0,16.0,3,4.0,20.0
+4242335,Jonathan Taylor,ind,Sun 10/12,vsARI,W31-27,21.0,123.0,5.9,1.0,30.0,4,4.0,14.0
+4242335,Jonathan Taylor,ind,Sun 10/19,@LAC,W38-24,16.0,94.0,5.9,3.0,23.0,3,3.0,38.0
+4242335,Jonathan Taylor,ind,Sun 10/26,vsTEN,W38-14,12.0,153.0,12.8,2.0,80.0,2,2.0,21.0
+4242335,Jonathan Taylor,ind,Sun 11/2,@PIT,L27-20,14.0,45.0,3.2,0.0,9.0,2,2.0,12.0
+4242335,Jonathan Taylor,ind,Sun 11/9,vsATL,W31-25 OT,32.0,244.0,7.6,3.0,83.0,3,3.0,42.0
+4242335,Jonathan Taylor,ind,Sun 11/23,@KC,L23-20 OT,16.0,58.0,3.6,0.0,27.0,2,3.0,8.0
+4242335,Jonathan Taylor,ind,Sun 11/30,vsHOU,L20-16,21.0,85.0,4.0,0.0,12.0,3,5.0,36.0
+4242335,Jonathan Taylor,ind,Regular Season Stats,226,"1,282",,,,,,304,,
+4047365,Josh Jacobs,gb,Sun 9/7,vsDET,W27-13,19.0,66.0,3.5,1.0,15.0,1,1.0,4.0
+4047365,Josh Jacobs,gb,Thu 9/11,vsWSH,W27-18,23.0,84.0,3.7,1.0,10.0,0,0.0,0.0
+4047365,Josh Jacobs,gb,Sun 9/21,@CLE,L13-10,16.0,30.0,1.9,0.0,7.0,5,9.0,44.0
+4047365,Josh Jacobs,gb,Sun 9/28,@DAL,T40-40 OT,22.0,86.0,3.9,2.0,19.0,4,4.0,71.0
+4047365,Josh Jacobs,gb,Sun 10/12,vsCIN,W27-18,18.0,93.0,5.2,2.0,16.0,5,5.0,57.0
+4047365,Josh Jacobs,gb,Sun 10/19,@ARI,W27-23,13.0,55.0,4.2,2.0,10.0,1,1.0,3.0
+4047365,Josh Jacobs,gb,Sun 10/26,@PIT,W35-25,13.0,33.0,2.5,1.0,6.0,3,3.0,12.0
+4047365,Josh Jacobs,gb,Sun 11/2,vsCAR,L16-13,17.0,87.0,5.1,1.0,18.0,4,5.0,13.0
+4047365,Josh Jacobs,gb,Mon 11/10,vsPHI,L10-7,21.0,74.0,3.5,1.0,11.0,5,6.0,33.0
+4047365,Josh Jacobs,gb,Sun 11/16,@NYG,W27-20,7.0,40.0,5.7,0.0,15.0,0,1.0,0.0
+4047365,Josh Jacobs,gb,Thu 11/27,@DET,W31-24,17.0,83.0,4.9,0.0,29.0,1,1.0,8.0
+4047365,Josh Jacobs,gb,Regular Season Stats,186,731,,,,,,245,,
+4432710,TreVeyon Henderson,ne,Sun 9/7,vsLV,L20-13,5.0,27.0,5.4,0.0,14.0,6,6.0,24.0
+4432710,TreVeyon Henderson,ne,Sun 9/14,@MIA,W33-27,3.0,10.0,3.3,0.0,6.0,2,2.0,30.0
+4432710,TreVeyon Henderson,ne,Sun 9/21,vsPIT,L21-14,11.0,28.0,2.5,0.0,5.0,3,3.0,19.0
+4432710,TreVeyon Henderson,ne,Sun 9/28,vsCAR,W42-13,7.0,32.0,4.6,1.0,11.0,2,2.0,14.0
+4432710,TreVeyon Henderson,ne,Sun 10/5,@BUF,W23-20,6.0,24.0,4.0,0.0,13.0,2,3.0,3.0
+4432710,TreVeyon Henderson,ne,Sun 10/12,@NO,W25-19,9.0,27.0,3.0,0.0,7.0,1,2.0,9.0
+4432710,TreVeyon Henderson,ne,Sun 10/19,@TEN,W31-13,2.0,5.0,2.5,0.0,3.0,0,0.0,0.0
+4432710,TreVeyon Henderson,ne,Sun 10/26,vsCLE,W32-13,10.0,75.0,7.5,0.0,27.0,0,0.0,0.0
+4432710,TreVeyon Henderson,ne,Sun 11/2,vsATL,W24-23,14.0,55.0,3.9,0.0,8.0,4,6.0,32.0
+4432710,TreVeyon Henderson,ne,Sun 11/9,@TB,W28-23,14.0,147.0,10.5,2.0,69.0,1,1.0,3.0
+4432710,TreVeyon Henderson,ne,Thu 11/13,vsNYJ,W27-14,19.0,62.0,3.3,2.0,9.0,5,5.0,31.0
+4432710,TreVeyon Henderson,ne,Sun 11/23,@CIN,W26-20,18.0,66.0,3.7,0.0,9.0,3,4.0,15.0
+4432710,TreVeyon Henderson,ne,Mon 12/1,vsNYG,W33-15,11.0,67.0,6.1,0.0,26.0,3,4.0,19.0
+4432710,TreVeyon Henderson,ne,Regular Season Stats,129,625,,,,,,199,,
+4429059,Woody Marks,hou,Sun 9/7,@LAR,L14-9,3.0,3.0,1.0,0.0,2.0,0,0.0,0.0
+4429059,Woody Marks,hou,Mon 9/15,vsTB,L20-19,3.0,14.0,4.7,0.0,7.0,1,1.0,37.0
+4429059,Woody Marks,hou,Sun 9/21,@JAX,L17-10,6.0,27.0,4.5,0.0,8.0,1,2.0,9.0
+4429059,Woody Marks,hou,Sun 9/28,vsTEN,W26-0,17.0,69.0,4.1,1.0,18.0,4,5.0,50.0
+4429059,Woody Marks,hou,Sun 10/5,@BAL,W44-10,7.0,24.0,3.4,0.0,11.0,0,1.0,0.0
+4429059,Woody Marks,hou,Mon 10/20,@SEA,L27-19,10.0,15.0,1.5,0.0,11.0,3,5.0,20.0
+4429059,Woody Marks,hou,Sun 10/26,vsSF,W26-15,11.0,62.0,5.6,0.0,23.0,4,4.0,49.0
+4429059,Woody Marks,hou,Sun 11/2,vsDEN,L18-15,10.0,27.0,2.7,0.0,7.0,0,3.0,0.0
+4429059,Woody Marks,hou,Sun 11/9,vsJAX,W36-29,14.0,63.0,4.5,1.0,21.0,2,3.0,18.0
+4429059,Woody Marks,hou,Sun 11/16,@TEN,W16-13,18.0,44.0,2.4,0.0,12.0,1,1.0,7.0
+4429059,Woody Marks,hou,Thu 11/20,vsBUF,W23-19,16.0,74.0,4.6,0.0,19.0,1,1.0,-5.0
+4429059,Woody Marks,hou,Sun 11/30,@IND,W20-16,19.0,64.0,3.4,0.0,16.0,1,1.0,3.0
+4429059,Woody Marks,hou,Regular Season Stats,134,486,,,,,,188,,
+4567048,Kenneth Walker III,sea,Sun 9/7,vsSF,L17-13,10.0,20.0,2.0,0.0,8.0,3,3.0,4.0
+4567048,Kenneth Walker III,sea,Sun 9/14,@PIT,W31-17,13.0,105.0,8.1,1.0,20.0,1,1.0,13.0
+4567048,Kenneth Walker III,sea,Sun 9/21,vsNO,W44-13,16.0,38.0,2.4,2.0,10.0,1,1.0,12.0
+4567048,Kenneth Walker III,sea,Thu 9/25,@ARI,W23-20,19.0,81.0,4.3,0.0,21.0,1,2.0,29.0
+4567048,Kenneth Walker III,sea,Sun 10/5,vsTB,L38-35,10.0,86.0,8.6,0.0,31.0,1,1.0,0.0
+4567048,Kenneth Walker III,sea,Sun 10/12,@JAX,W20-12,10.0,34.0,3.4,0.0,10.0,1,1.0,3.0
+4567048,Kenneth Walker III,sea,Mon 10/20,vsHOU,W27-19,17.0,66.0,3.9,0.0,16.0,0,0.0,0.0
+4567048,Kenneth Walker III,sea,Sun 11/2,@WSH,W38-14,11.0,42.0,3.8,0.0,12.0,2,2.0,19.0
+4567048,Kenneth Walker III,sea,Sun 11/9,vsARI,W44-22,14.0,67.0,4.8,0.0,24.0,1,1.0,3.0
+4567048,Kenneth Walker III,sea,Sun 11/16,@LAR,L21-19,16.0,67.0,4.2,1.0,25.0,3,3.0,44.0
+4567048,Kenneth Walker III,sea,Sun 11/23,@TEN,W30-24,11.0,71.0,6.5,0.0,19.0,3,4.0,30.0
+4567048,Kenneth Walker III,sea,Sun 11/30,vsMIN,W26-0,13.0,56.0,4.3,0.0,24.0,3,4.0,18.0
+4567048,Kenneth Walker III,sea,Regular Season Stats,160,733,,,,,,175,,
+4568490,RJ Harvey,den,Sun 9/7,vsTEN,W20-12,6.0,70.0,11.7,0.0,50.0,1,1.0,-1.0
+4568490,RJ Harvey,den,Sun 9/14,@IND,L29-28,5.0,8.0,1.6,0.0,3.0,1,2.0,16.0
+4568490,RJ Harvey,den,Sun 9/21,@LAC,L23-20,2.0,2.0,1.0,0.0,4.0,3,3.0,14.0
+4568490,RJ Harvey,den,Mon 9/29,vsCIN,W28-3,14.0,58.0,4.1,0.0,9.0,4,5.0,40.0
+4568490,RJ Harvey,den,Sun 10/5,@PHI,W21-17,4.0,12.0,3.0,0.0,8.0,3,3.0,18.0
+4568490,RJ Harvey,den,Sun 10/12,vsNYJ,W13-11,2.0,4.0,2.0,0.0,2.0,4,4.0,21.0
+4568490,RJ Harvey,den,Sun 10/19,vsNYG,W33-32,4.0,0.0,0.0,0.0,4.0,1,2.0,2.0
+4568490,RJ Harvey,den,Sun 10/26,vsDAL,W44-24,7.0,46.0,6.6,2.0,40.0,1,1.0,5.0
+4568490,RJ Harvey,den,Sun 11/2,@HOU,W18-15,2.0,5.0,2.5,0.0,3.0,5,5.0,51.0
+4568490,RJ Harvey,den,Thu 11/6,vsLV,W10-7,4.0,9.0,2.3,0.0,7.0,2,3.0,9.0
+4568490,RJ Harvey,den,Sun 11/16,vsKC,W22-19,11.0,30.0,2.7,0.0,7.0,3,3.0,20.0
+4568490,RJ Harvey,den,Sun 11/30,@WSH,W27-26 OT,13.0,35.0,2.7,2.0,11.0,3,4.0,27.0
+4568490,RJ Harvey,den,Regular Season Stats,74,279,,,,,,222,,
+4239996,Travis Etienne Jr.,jax,Sun 9/7,vsCAR,W26-10,16.0,143.0,8.9,0.0,71.0,3,3.0,13.0
+4239996,Travis Etienne Jr.,jax,Sun 9/14,@CIN,L31-27,14.0,71.0,5.1,0.0,30.0,2,3.0,18.0
+4239996,Travis Etienne Jr.,jax,Sun 9/21,vsHOU,W17-10,16.0,56.0,3.5,1.0,10.0,0,2.0,0.0
+4239996,Travis Etienne Jr.,jax,Sun 9/28,@SF,W26-21,19.0,124.0,6.5,1.0,48.0,1,2.0,1.0
+4239996,Travis Etienne Jr.,jax,Mon 10/6,vsKC,W31-28,12.0,49.0,4.1,0.0,8.0,3,4.0,9.0
+4239996,Travis Etienne Jr.,jax,Sun 10/12,vsSEA,L20-12,12.0,27.0,2.3,0.0,7.0,4,5.0,28.0
+4239996,Travis Etienne Jr.,jax,Sun 10/19,vsLAR,L35-7,8.0,44.0,5.5,0.0,13.0,1,3.0,11.0
+4239996,Travis Etienne Jr.,jax,Sun 11/2,@LV,W30-29 OT,22.0,84.0,3.8,0.0,20.0,5,5.0,31.0
+4239996,Travis Etienne Jr.,jax,Sun 11/9,@HOU,L36-29,16.0,58.0,3.6,1.0,13.0,2,4.0,19.0
+4239996,Travis Etienne Jr.,jax,Sun 11/16,vsLAC,W35-6,19.0,73.0,3.8,2.0,13.0,0,2.0,0.0
+4239996,Travis Etienne Jr.,jax,Sun 11/23,@ARI,W27-24 OT,15.0,86.0,5.7,0.0,45.0,3,4.0,30.0
+4239996,Travis Etienne Jr.,jax,Sun 11/30,@TEN,W25-3,12.0,28.0,2.3,0.0,6.0,1,1.0,13.0
+4239996,Travis Etienne Jr.,jax,Regular Season Stats,181,843,,,,,,173,,

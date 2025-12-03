@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NFL RB Performance Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #222;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    
+    header p {
+      font-size: 16px;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    .section {
+      margin-bottom: 50px;
+    }
+    
+    .section h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #222;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 12px;
+    }
+    
+    .section-description {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    
+    #vis {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #e0e0e0;
+    }
+    
+    #chart { 
+      background: white;
+      border-radius: 6px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.05));
+    }
+    
+    .axis line, .axis path { stroke: #999; stroke-width: 1px; }
+    .tick text { font-size: 12px; fill: #666; font-family: 'Inter', sans-serif; }
+    .dot { 
+      fill: #667eea;
+      opacity: 0.85;
+      stroke: #667eea;
+      stroke-width: 0.8;
+      transition: opacity 0.2s, r 0.2s;
+    }
+    .dot:hover { opacity: 1; filter: drop-shadow(0 4px 8px rgba(102, 126, 234, 0.4)); }
+    
+    .grid line { stroke: #f0f0f0 }
+    
+    #tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(34, 34, 34, 0.95);
+      color: white;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      display: none;
+      z-index: 1000;
+      max-width: 280px;
+      border: 1px solid rgba(255,255,255,0.1);
+      font-weight: 500;
+    }
+    
+    .legend-info {
+      margin-top: 16px;
+      padding: 12px 16px;
+      background: #f0f3ff;
+      border-left: 4px solid #667eea;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #444;
+      font-weight: 300;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+    }
+    
+    table thead tr {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    table th {
+      padding: 14px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    
+    table th:nth-child(3),
+    table th:nth-child(4) {
+      text-align: right;
+    }
+    
+    table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 14px;
+    }
+    
+    table tbody tr {
+      transition: background 0.2s;
+    }
+    
+    table tbody tr:hover {
+      background: #f8f9fa;
+    }
+    
+    table tbody tr:nth-child(odd) {
+      background: #fafbfc;
+    }
+    
+    table td:nth-child(3),
+    table td:nth-child(4) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    
+    table td:first-child {
+      font-weight: 600;
+      color: #667eea;
+    }
+    
+    footer {
+      background: #f8f9fa;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #e0e0e0;
+    }
+    
+    @media (max-width: 768px) {
+      header { padding: 30px 20px; }
+      header h1 { font-size: 24px; }
+      .content { padding: 20px; }
+      #vis { padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NFL RB Performance Analysis</h1>
+      <p>Compare Running Back Rushing Performance Against Elite vs Weak Run Defenses</p>
+    </header>
+
+    <div class="content">
+      <section class="section">
+        <h2>Scatterplot Analysis</h2>
+        <p class="section-description">Each dot represents a starting running back. Hover over a dot to see player details including their average yards per game against top and bottom 16 run defenses.</p>
+        
+        <div id="vis">
+          <svg id="chart" width="820" height="600"></svg>
+        </div>
+        
+        <div class="legend-info">
+          <strong>Key insight:</strong> The diagonal dashed line represents equal performance (y = x). Points above the line show RBs who perform better against weaker defenses, while points below indicate consistent performance.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>NFL Run Defense Rankings</h2>
+        <p class="section-description">All 32 NFL teams ranked by total rushing yards allowed throughout the season (lower is better defense).</p>
+        
+        <table id="defenseTable">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Total Yards Allowed</th>
+              <th>Yards Per Game</th>
+            </tr>
+          </thead>
+          <tbody id="defenseTableBody">
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <footer>
+      <p>Data compiled from ESPN 2025 NFL season statistics • Last updated December 3, 2025</p>
+    </footer>
+  </div>
+
+  <div id="tooltip"></div>
+
+  <script>
+  // Embedded CSV data (from workspace files)
+  const csvTop = `player_name,team,games_vs_top16,rushing_yards_vs_top16,rushing_attempts_vs_top16,rushing_td_vs_top16,receiving_yards_vs_top16,receiving_receptions_vs_top16,rushing_avg_vs_top16
+Jonathan Taylor,ind,7,589.0,126.0,6.0,184.0,20,4.67
+Tony Pollard,ten,11,515.0,136.0,1.0,160.0,24,3.79
+Travis Etienne Jr.,jax,8,515.0,124.0,5.0,99.0,16,4.15
+Chase Brown,cin,8,513.0,112.0,1.0,128.0,26,4.58
+Kyren Williams,lar,7,472.0,95.0,4.0,115.0,18,4.97
+James Cook III,buf,5,471.0,107.0,1.0,123.0,10,4.4
+Jahmyr Gibbs,det,5,379.0,78.0,3.0,137.0,19,4.86
+Kenneth Walker III,sea,6,378.0,76.0,2.0,64.0,9,4.97
+Derrick Henry,bal,6,373.0,88.0,3.0,50.0,6,4.24
+Quinshon Judkins,cle,6,369.0,99.0,4.0,50.0,11,3.73
+Ashton Jeanty,lv,8,352.0,114.0,2.0,196.0,33,3.09
+Saquon Barkley,phi,6,350.0,113.0,2.0,152.0,17,3.1
+Christian McCaffrey,sf,7,337.0,118.0,2.0,434.0,45,2.86
+Breece Hall,nyj,5,328.0,85.0,0.0,117.0,9,3.86
+Jaylen Warren,pit,6,310.0,86.0,2.0,161.0,17,3.6
+De'Von Achane,mia,4,295.0,47.0,2.0,150.0,18,6.28
+Tyrone Tracy Jr.,nyg,6,279.0,70.0,1.0,142.0,13,3.99
+Javonte Williams,dal,4,278.0,72.0,3.0,44.0,8,3.86
+TreVeyon Henderson,ne,4,277.0,40.0,2.0,46.0,10,6.92
+Woody Marks,hou,8,275.0,76.0,1.0,136.0,12,3.62
+Rico Dowdle,car,5,270.0,61.0,2.0,70.0,11,4.43
+Kareem Hunt,kc,6,269.0,65.0,4.0,58.0,8,4.14
+Kimani Vidal,lac,4,254.0,64.0,2.0,38.0,8,3.97
+Bam Knight,ari,7,217.0,61.0,3.0,109.0,16,3.56
+Josh Jacobs,gb,4,212.0,65.0,2.0,68.0,10,3.26
+Alvin Kamara,no,5,207.0,61.0,0.0,107.0,15,3.39
+Bijan Robinson,atl,4,194.0,55.0,0.0,206.0,22,3.53
+Chris Rodriguez Jr.,wsh,6,170.0,46.0,3.0,0.0,0,3.7
+Aaron Jones Sr.,min,4,137.0,29.0,0.0,73.0,11,4.72
+D'Andre Swift,chi,3,116.0,34.0,2.0,42.0,8,3.41
+Bucky Irving,tb,1,71.0,17.0,0.0,50.0,6,4.18
+RJ Harvey,den,5,54.0,24.0,0.0,110.0,14,2.25
+`;
+
+  const csvBottom = `player_name,team,games_vs_bottom16,rushing_yards_vs_bottom16,rushing_attempts_vs_bottom16,rushing_td_vs_bottom16,receiving_yards_vs_bottom16,receiving_receptions_vs_bottom16,rushing_avg_vs_bottom16
+Bijan Robinson,atl,8,801.0,140.0,5.0,388.0,32,5.72
+James Cook III,buf,7,757.0,124.0,7.0,113.0,17,6.1
+De'Von Achane,mia,8,739.0,139.0,4.0,220.0,36,5.32
+Jonathan Taylor,ind,5,693.0,100.0,9.0,120.0,15,6.93
+Javonte Williams,dal,8,677.0,126.0,5.0,84.0,23,5.37
+Rico Dowdle,car,8,659.0,131.0,3.0,184.0,18,5.03
+D'Andre Swift,chi,8,658.0,126.0,3.0,195.0,17,5.22
+Jahmyr Gibbs,det,7,640.0,97.0,7.0,260.0,32,6.6
+Derrick Henry,bal,6,558.0,109.0,7.0,92.0,8,5.12
+Josh Jacobs,gb,7,519.0,121.0,9.0,177.0,19,4.29
+Christian McCaffrey,sf,6,512.0,119.0,6.0,372.0,40,4.3
+Breece Hall,nyj,7,506.0,102.0,3.0,192.0,21,4.96
+Kyren Williams,lar,5,396.0,88.0,3.0,69.0,6,4.5
+Saquon Barkley,phi,6,390.0,85.0,2.0,107.0,18,4.59
+Quinshon Judkins,cle,5,389.0,97.0,3.0,38.0,6,4.01
+Kenneth Walker III,sea,6,355.0,84.0,2.0,111.0,11,4.23
+TreVeyon Henderson,ne,9,348.0,89.0,3.0,153.0,22,3.91
+Jaylen Warren,pit,5,329.0,65.0,2.0,67.0,10,5.06
+Travis Etienne Jr.,jax,4,328.0,57.0,0.0,74.0,9,5.75
+Kimani Vidal,lac,5,289.0,57.0,1.0,25.0,5,5.07
+Ashton Jeanty,lv,4,283.0,67.0,2.0,55.0,10,4.22
+Alvin Kamara,no,6,264.0,70.0,1.0,79.0,18,3.77
+Kareem Hunt,kc,6,246.0,65.0,3.0,56.0,6,3.78
+Bucky Irving,tb,4,227.0,71.0,1.0,163.0,15,3.2
+RJ Harvey,den,7,225.0,50.0,4.0,112.0,17,4.5
+Woody Marks,hou,4,211.0,58.0,1.0,52.0,6,3.64
+Chase Brown,cin,4,191.0,48.0,1.0,159.0,22,3.98
+Aaron Jones Sr.,min,4,163.0,38.0,1.0,77.0,9,4.29
+Tyrone Tracy Jr.,nyg,5,155.0,43.0,0.0,61.0,9,3.6
+Chris Rodriguez Jr.,wsh,4,150.0,25.0,1.0,6.0,1,6.0
+Tony Pollard,ten,1,67.0,14.0,1.0,11.0,3,4.79
+Bam Knight,ari,3,38.0,13.0,1.0,33.0,3,2.92
+`;
+
+  const csvDefenses = `Team,Rushing Yards (Yds),Yards Per Game (Y/G)
+New York Giants,"1,886",157.2
+Cincinnati Bengals,"1,716",156.0
+Buffalo Bills,"1,638",148.9
+Miami Dolphins,"1,569",142.6
+Chicago Bears,"1,519",138.1
+Washington Commanders,"1,513",137.5
+Atlanta Falcons,"1,464",133.1
+Tennessee Titans,"1,461",132.8
+Minnesota Vikings,"1,416",128.7
+New York Jets,"1,407",127.9
+Carolina Panthers,"1,391",115.9
+Dallas Cowboys,"1,377",125.2
+New Orleans Saints,"1,359",123.5
+Baltimore Ravens,"1,293",117.5
+Philadelphia Eagles,"1,266",115.1
+Arizona Cardinals,"1,256",114.2
+Los Angeles Chargers,"1,252",113.8
+San Francisco 49ers,"1,211",100.9
+Pittsburgh Steelers,"1,163",105.7
+Las Vegas Raiders,"1,137",103.4
+Los Angeles Rams,"1,130",102.7
+Cleveland Browns,"1,125",102.3
+Detroit Lions,"1,119",101.7
+Kansas City Chiefs,"1,074",97.6
+Tampa Bay Buccaneers,"1,074",97.6
+Indianapolis Colts,"1,071",97.4
+Green Bay Packers,"1,061",96.5
+New England Patriots,"1,052",87.7
+Houston Texans,"1,014",92.2
+Seattle Seahawks,999,90.8
+Denver Broncos,974,88.5
+Jacksonville Jaguars,922,83.8
+`;
+
+  // CSV parser: simple split-based parser (works here because data is clean)
+  function parseCSV(csv) {
+    const lines = csv.trim().split('\n');
+    if (!lines.length) return [];
+    const headers = lines[0].split(',').map(h => h.trim());
+    const rows = [];
+    for (let i=1;i<lines.length;i++){
+      const line = lines[i];
+      if (!line.trim()) continue;
+      // split but allow commas inside names? Our data contains commas only in numeric thousands removed, and names don't contain commas
+      const parts = line.split(',');
+      // if number of parts > headers, join the extra parts into the name field
+      if (parts.length > headers.length){
+        // assume player_name is first column; merge extras into the first field
+        const extras = parts.slice(0, parts.length - (headers.length-1));
+        const rest = parts.slice(parts.length - (headers.length-1));
+        const row = [extras.join(',')].concat(rest);
+        rows.push(row.reduce((acc, v, idx) => { acc[headers[idx]] = v; return acc; }, {}));
+      } else {
+        const obj = {};
+        for (let j=0;j<headers.length;j++) obj[headers[j]] = parts[j] === undefined ? '' : parts[j];
+        rows.push(obj);
+      }
+    }
+    return rows;
+  }
+
+  const topRows = parseCSV(csvTop);
+  const bottomRows = parseCSV(csvBottom);
+
+  // Map by player_name
+  const topMap = new Map();
+  topRows.forEach(r => {
+    const name = r.player_name.trim();
+    topMap.set(name, {
+      player_name: name,
+      team: r.team,
+      games_vs_top: Number(r.games_vs_top16) || 0,
+      rushing_yards_vs_top: Number(r.rushing_yards_vs_top16) || 0,
+      rushing_avg_vs_top: Number(r.rushing_avg_vs_top16) || 0
+    });
+  });
+
+  const bottomMap = new Map();
+  bottomRows.forEach(r => {
+    const name = r.player_name.trim();
+    bottomMap.set(name, {
+      player_name: name,
+      team: r.team,
+      games_vs_bottom: Number(r.games_vs_bottom16) || 0,
+      rushing_yards_vs_bottom: Number(r.rushing_yards_vs_bottom16) || 0,
+      rushing_avg_vs_bottom: Number(r.rushing_avg_vs_bottom16) || 0
+    });
+  });
+
+  // Merge into points array (require both averages present)
+    const points = [];
+  topMap.forEach((top, name) => {
+    if (!bottomMap.has(name)) return; // skip if no bottom data
+    const bot = bottomMap.get(name);
+    // Prefer yards-per-game (total yards / games). Fall back to stored avg if games count missing.
+    const x = (top.games_vs_top ? (top.rushing_yards_vs_top / top.games_vs_top) : (top.rushing_avg_vs_top || null));
+    const y = (bot.games_vs_bottom ? (bot.rushing_yards_vs_bottom / bot.games_vs_bottom) : (bot.rushing_avg_vs_bottom || null));
+    if (x == null || y == null) return;
+    points.push({name, team: top.team || bot.team, x: Number(x), y: Number(y), games_top: top.games_vs_top, games_bottom: bot.games_vs_bottom, yards_top: top.rushing_yards_vs_top, yards_bottom: bot.rushing_yards_vs_bottom});
+  });
+
+  // Sort points by name
+  points.sort((a,b) => a.name.localeCompare(b.name));
+
+  // Draw scatterplot using SVG
+  const svg = document.getElementById('chart');
+  const width = +svg.getAttribute('width');
+  const height = +svg.getAttribute('height');
+  const margin = {top: 40, right: 40, bottom: 60, left: 80};
+  const innerW = width - margin.left - margin.right;
+  const innerH = height - margin.top - margin.bottom;
+
+  // compute scales
+  const xs = points.map(p => p.x);
+  const ys = points.map(p => p.y);
+  const xmin = Math.floor(Math.min(...xs) - 1);
+  const xmax = Math.ceil(Math.max(...xs) + 1);
+  const ymin = Math.floor(Math.min(...ys) - 1);
+  const ymax = Math.ceil(Math.max(...ys) + 1);
+
+  function xScale(v){ return margin.left + ( (v - xmin) / (xmax - xmin) ) * innerW; }
+  function yScale(v){ return margin.top + innerH - ( (v - ymin) / (ymax - ymin) ) * innerH; }
+
+  // clear svg
+  while(svg.firstChild) svg.removeChild(svg.firstChild);
+
+  // background
+  const bg = document.createElementNS('http://www.w3.org/2000/svg','rect');
+  bg.setAttribute('x', 0); bg.setAttribute('y', 0); bg.setAttribute('width', width); bg.setAttribute('height', height); bg.setAttribute('fill','#fff');
+  svg.appendChild(bg);
+
+  // axes lines
+  const axisGroup = document.createElementNS('http://www.w3.org/2000/svg','g');
+  axisGroup.setAttribute('class','axis');
+  svg.appendChild(axisGroup);
+
+  // grid + ticks
+  const nTicks = 6;
+  for(let i=0;i<=nTicks;i++){
+    const tx = xmin + (i/nTicks)*(xmax-xmin);
+    const gx = xScale(tx);
+    const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+    line.setAttribute('x1', gx); line.setAttribute('x2', gx);
+    line.setAttribute('y1', margin.top); line.setAttribute('y2', margin.top+innerH);
+    line.setAttribute('stroke','#eee'); svg.appendChild(line);
+    // tick label
+    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+    t.setAttribute('x', gx); t.setAttribute('y', margin.top + innerH + 18);
+    t.setAttribute('text-anchor','middle'); t.setAttribute('class','tick');
+    t.textContent = tx.toFixed(1);
+    svg.appendChild(t);
+  }
+
+  for(let i=0;i<=nTicks;i++){
+    const ty = ymin + (i/nTicks)*(ymax-ymin);
+    const gy = yScale(ty);
+    const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+    line.setAttribute('x1', margin.left); line.setAttribute('x2', margin.left+innerW);
+    line.setAttribute('y1', gy); line.setAttribute('y2', gy);
+    line.setAttribute('stroke','#eee'); svg.appendChild(line);
+    // tick label
+    const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+    t.setAttribute('x', margin.left - 10); t.setAttribute('y', gy+4);
+    t.setAttribute('text-anchor','end'); t.setAttribute('class','tick');
+    t.textContent = ty.toFixed(1);
+    svg.appendChild(t);
+  }
+
+  // axis labels
+  const xlabel = document.createElementNS('http://www.w3.org/2000/svg','text');
+  xlabel.setAttribute('x', margin.left + innerW/2); xlabel.setAttribute('y', margin.top + innerH + 46);
+  xlabel.setAttribute('text-anchor','middle'); xlabel.textContent = 'Avg rushing yards per game vs Top 16 defenses'; svg.appendChild(xlabel);
+
+  const ylabel = document.createElementNS('http://www.w3.org/2000/svg','text');
+  ylabel.setAttribute('transform', `translate(${20}, ${margin.top + innerH/2}) rotate(-90)`);
+  ylabel.setAttribute('text-anchor','middle'); ylabel.textContent = 'Avg rushing yards per game vs Bottom 16 defenses'; svg.appendChild(ylabel);
+
+  // draw diagonal y=x line
+  const x1 = xScale(xmin), y1 = yScale(xmin);
+  const x2 = xScale(xmax), y2 = yScale(xmax);
+  const diag = document.createElementNS('http://www.w3.org/2000/svg','line');
+  diag.setAttribute('x1', x1); diag.setAttribute('y1', y1); diag.setAttribute('x2', x2); diag.setAttribute('y2', y2);
+  diag.setAttribute('stroke', '#bbb'); diag.setAttribute('stroke-dasharray','6 4'); svg.appendChild(diag);
+
+  // points group
+  const pts = document.createElementNS('http://www.w3.org/2000/svg','g');
+  svg.appendChild(pts);
+
+  const tooltip = document.getElementById('tooltip');
+
+  points.forEach(p => {
+    const cx = xScale(p.x);
+    const cy = yScale(p.y);
+    const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    circle.setAttribute('cx', cx); circle.setAttribute('cy', cy);
+    circle.setAttribute('r', 6);
+    circle.setAttribute('class', 'dot');
+    pts.appendChild(circle);
+
+    // hover handlers
+    circle.addEventListener('mousemove', (ev) => {
+      const html = `<strong>${p.name}</strong> (${p.team.toUpperCase()})<br/>
+        vs top16: ${p.x.toFixed(2)} yds/game (games: ${p.games_top})<br/>
+        vs bottom16: ${p.y.toFixed(2)} yds/game (games: ${p.games_bottom})`;
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = html;
+      const pad = 12;
+      // position tooltip near mouse but within window
+      const left = ev.pageX + pad;
+      const top = ev.pageY + pad;
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+    });
+    circle.addEventListener('mouseout', () => { tooltip.style.display = 'none'; });
+  });
+
+  // Add small labels for notable players (optional)
+  // clickable: center the chart on a click (not implemented)
+
+  // ===== DEFENSE RANKINGS TABLE =====
+  // Parse defense stats CSV
+  function parseDefenseCSV(csv) {
+    const lines = csv.trim().split('\n');
+    if (!lines.length) return [];
+    const headers = lines[0].split(',').map(h => h.trim());
+    const rows = [];
+    for (let i=1;i<lines.length;i++){
+      const line = lines[i];
+      if (!line.trim()) continue;
+      // Handle quoted values with commas (e.g., "1,886")
+      let parts = [];
+      let inQuotes = false;
+      let current = '';
+      for (let j=0;j<line.length;j++){
+        const ch = line[j];
+        if (ch === '"') { inQuotes = !inQuotes; }
+        else if (ch === ',' && !inQuotes) { parts.push(current); current = ''; }
+        else { current += ch; }
+      }
+      parts.push(current);
+      const obj = {};
+      for (let j=0;j<headers.length;j++) {
+        obj[headers[j]] = (parts[j] === undefined ? '' : parts[j]).trim().replace(/^"(.*)"$/, '$1');
+      }
+      rows.push(obj);
+    }
+    return rows;
+  }
+
+  const defenseRows = parseDefenseCSV(csvDefenses);
+
+  // Convert rushing yards (string with comma) to number and sort by total yards
+  const defenseData = defenseRows.map((row, idx) => {
+    const yardsStr = row['Rushing Yards (Yds)'].replace(/,/g, '');
+    return {
+      rank: idx + 1,
+      team: row['Team'],
+      total_yards: parseInt(yardsStr, 10),
+      yds_per_game: parseFloat(row['Yards Per Game (Y/G)'])
+    };
+  }).sort((a, b) => a.total_yards - b.total_yards);
+
+  // Populate the table
+  const tableBody = document.getElementById('defenseTableBody');
+  defenseData.forEach((def, idx) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${idx + 1}</td>
+      <td><strong>${def.team}</strong></td>
+      <td>${def.total_yards.toLocaleString()}</td>
+      <td>${def.yds_per_game.toFixed(1)}</td>
+    `;
+    tableBody.appendChild(tr);
+  });
+
+  </script>
+</body>
+</html>
